@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  background: #336899;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.nav {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav .logo {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.nav .nav-list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #336899;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: opacity .3s linear;
+  transition: opacity .3s linear;
+}
+
+.nav .nav-list.active {
+  opacity: 1;
+}
+
+.nav .nav-list .nav-item {
+  margin-bottom: 2rem;
+}
+
+.nav .nav-list .nav-item .nav-link {
+  color: #fff;
+  font-size: 3rem;
+  text-decoration: none;
+  display: 500;
+  padding: 0 1.5rem;
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.nav .nav-list .nav-item .nav-link:hover {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
+.menu-hamburger {
+  z-index: 3;
+  position: relative;
+}
+
+.menu-hamburger .fa-bars {
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: color .2s linear;
+  transition: color .2s linear;
+}
+
+.menu-hamburger .fa-bars:hover {
+  color: rgba(0, 0, 0, 0.788);
+}
+
+.menu-hamburger .fa-times {
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-hamburger.active .fa-bars {
+  display: none;
+}
+
+.menu-hamburger.active .fa-times {
+  display: block;
+  -webkit-transition: color .4s ease;
+  transition: color .4s ease;
+}
+
+.menu-hamburger.active .fa-times:hover {
+  color: #000;
+}
+/*# sourceMappingURL=style.css.map */
