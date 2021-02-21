@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: .2fr 1.5fr 1.2fr .8fr;
+      grid-template-rows: .2fr 1.5fr 1.2fr .8fr;
+      grid-template-areas: "nav nav nav nav" "sidebar main main main" "sidebar content1 content2 content3" "sidebar footer footer footer";
+  grid-gap: .2rem;
+  text-align: center;
+  font-size: 24px;
+}
+
+nav {
+  background: lightblue;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: nav;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+main {
+  background: lightcoral;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: main;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+.sidebar {
+  background: green;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: sidebar;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+.content1 {
+  background: lightgreen;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: content1;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+.content2 {
+  background: lightseagreen;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: content2;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+.content3 {
+  background: lightslategray;
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: content3;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+footer {
+  background: lightsalmon;
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+/* responsive design */
+@media only screen and (max-width: 550px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: .4fr .4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-rows: .4fr .4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas: "nav" "sidebar" "main" "content1" "content2" "content3" "footer";
+  }
+}
+/*# sourceMappingURL=style.css.map */
