@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  background: #000;
+  color: #fff;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  width: 90%;
+  max-width: 1420px;
+  margin: 0 auto;
+}
+
+.logo {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-left: 20px;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  text-align: center;
+  width: 70%;
+  justify-self: end;
+}
+
+ul a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+ul a:after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: red;
+  -webkit-transition: linear 0.3s;
+  transition: linear 0.3s;
+}
+
+ul a:hover:after {
+  width: 80%;
+}
+
+.toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    position: relative;
+  }
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    background: #888;
+    width: 50%;
+    height: calc(100vh - 80px);
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  ul.active {
+    background: #000;
+    left: 0;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .toggle {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */
