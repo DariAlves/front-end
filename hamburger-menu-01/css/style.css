@@ -101,12 +101,6 @@ html {
   font-size: 2rem;
   color: #fff;
   cursor: pointer;
-  -webkit-transition: color .2s linear;
-  transition: color .2s linear;
-}
-
-.menu-hamburger .fa-bars:hover {
-  color: rgba(0, 0, 0, 0.788);
 }
 
 .menu-hamburger .fa-times {
@@ -122,11 +116,5 @@ html {
 
 .menu-hamburger.active .fa-times {
   display: block;
-  -webkit-transition: color .4s ease;
-  transition: color .4s ease;
-}
-
-.menu-hamburger.active .fa-times:hover {
-  color: #000;
 }
 /*# sourceMappingURL=style.css.map */

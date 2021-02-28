@@ -84,11 +84,6 @@ html {
         font-size: 2rem;
         color: #fff;
         cursor: pointer;
-        transition: color .2s linear;
-
-        &:hover {
-            color: rgba(0, 0, 0, 0.788);
-        }
         
     }
 
@@ -107,11 +102,6 @@ html {
 
         .fa-times {
             display: block;
-            transition: color .4s ease;
-
-            &:hover {
-                color: #000;
-            }
         }
     }
 
